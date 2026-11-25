@@ -1,0 +1,217 @@
+/* RESET & DESAIN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+/* HEADER & NAVIGASI */
+header {
+    background-color: #2e7d32;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #ffb74d;
+}
+/* HERO SECTION / BANNER */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background-color: #e68a00;
+}
+
+/* KATALOG PRODUK */
+main {
+    padding: 60px 8%;
+    text-align: center;
+}
+main h2, .section-langkah h2, .section-kontak h2 {
+    font-size: 28px;
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 260px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1b5e20;
+}
+.harga {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e65100;
+    margin-bottom: 20px;
+}
+.btn-sewa {
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.btn-sewa:hover {
+    background-color: #1b5e20;
+}
+
+/* BAGIAN CARA SEWA */
+.section-langkah {
+    background-color: #e8f5e9;
+    padding: 60px 8%;
+    text-align: center;
+}
+.langkah-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.langkah-box {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.nomor {
+    background: #2e7d32;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* BAGIAN KONTAK & WHATSAPP */
+.section-kontak {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: white;
+}
+.kontak-box {
+    max-width: 500px;
+    margin: 20px auto 0;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+.kontak-box p {
+    margin-bottom: 10px;
+}
+.btn-wa {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+.btn-wa:hover {
+    background-color: #1eb954;
+}
+/* FOOTER */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.section-langkah {
+    padding: 55px 25px;
+    text-align: center;
+    background: linear-gradient(135deg, #d8edda, #f1f8e9);
+    border-radius: 40px;
+    margin: 25px;
+}
+.langkah-box {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.langkah-box:hover {
+    transform: scale(1.04);
+}
